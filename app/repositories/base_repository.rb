@@ -28,7 +28,7 @@ class BaseRepository
       #create new element with row with updated values and push it to array
       @elements << convert_row(row)
     end
-    @next_id = @elements.last.id
+    @next_id = @elements.last.id + 1
   end
 
   def save_csv
