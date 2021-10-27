@@ -14,7 +14,7 @@ class CustomersController
     @customers_view.display(customers)
   end
 
-  def create
+  def add
     #1. Ask user for name
     name = @customers_view.ask_user_for("name")
     #2. Ask user for a address
